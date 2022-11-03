@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulario</title>
+    <title>Encuesta</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <h2>Formulario</h2>
+    <p>Rellene las siguientes preguntas con los datos requeridos.</p>
     
-    <form>
+    <img src="https://vanacco.com/wp-content/uploads/2020/06/Form-1.jpg" height="250" width="250"/>
+    <br>
+    <br>
+
+    <form action="/formulario" method="post">
         <label for="Nombre">Nombre(s)</label>
         <input id="Nombre" name="Nombre" placeholder="Introduzca su Nombre" />
         <br>
@@ -23,6 +28,13 @@
         <input id="Edad" name=""Edad" placeholder="Introduzca su edad" />
         <br>
         <br>
+        <label for="Cumpleanos">Mes cumpleaños</label>
+        <input type="month" id="Cumpleanos" name="Cumpleanos" />
+        <br>
+        <br>
+        <textarea rows="5" id="Comentario" placeholder="Ingresa tus pasatiempos" name="Comentario"></textarea>
+        <br>
+        <input type="submit" />
 
     </form>
     
